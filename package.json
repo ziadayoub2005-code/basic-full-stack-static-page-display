@@ -1,0 +1,26 @@
+{
+  "name": "basic-fullstack-static-display",
+  "version": "1.0.0",
+  "description": "Basic Full Stack Static Page Display - MEAN Stack Environment & Static Frontend Component",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "mean-stack",
+    "full-stack",
+    "express",
+    "node",
+    "static-display",
+    "portfolio"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0"
+  }
+}

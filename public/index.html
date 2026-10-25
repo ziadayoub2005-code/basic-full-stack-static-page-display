@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus • Full Stack Static Showcase Display</title>
+  <meta name="description" content="A modern single page web application displaying static text and images built on a robust full stack Express & Node.js environment.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Effects -->
+  <div class="ambient-glow"></div>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <div class="container">
+    <!-- Header / Navigation -->
+    <header class="header">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#" class="brand" id="brandLogo">
+          <div class="brand-icon">N</div>
+          <div class="brand-name">NEXUS<span>.io</span></div>
+        </a>
+        <div class="server-status-pill" id="serverStatus">
+          <span class="status-dot"></span>
+          <span>Connecting to Server...</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="heroSection">
+        <div class="badge">
+          ✨ Full Stack Static Showcase
+        </div>
+        <h1 class="hero-title">
+          Modern Architectural &amp; <span class="gradient-text">Digital Art Exhibition</span>
+        </h1>
+        <p class="hero-description">
+          A high-performance single-page display serving curated static text, architectural perspectives, and abstract 3D compositions powered by an Express.js &amp; Node.js full stack foundation.
+        </p>
+        <div class="hero-actions">
+          <a href="#showcase" class="btn btn-primary" id="exploreBtn">
+            <span>Explore Collection</span>
+            <span>↓</span>
+          </a>
+          <a href="#architecture" class="btn btn-secondary" id="archBtn">
+            <span>Stack Specifications</span>
+          </a>
+        </div>
+
+        <!-- Metrics Overview -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Static File Delivery</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">0ms</div>
+            <div class="metric-label">Database Latency</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">Node.js</div>
+            <div class="metric-label">Express Full Stack Runtime</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">&lt; 1s</div>
+            <div class="metric-label">Initial Page Load Time</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Showcase Gallery Section -->
+      <section class="section" id="showcase">
+        <div class="section-header">
+          <p class="section-tag">Curated Portfolio</p>
+          <h2 class="section-title">Static Visual Exhibition</h2>
+        </div>
+
+        <div class="showcase-grid">
+          <!-- Card 1: Architectural Pavilion -->
+          <article class="showcase-card" id="cardArch">
+            <div class="card-media" title="Click to expand view">
+              <span class="card-badge">Architecture</span>
+              <img src="/images/architecture.jpg" alt="Minimalist Architectural Pavilion with curved glass and concrete" loading="lazy">
+              <div class="card-overlay-btn">
+                <div class="overlay-icon">⤢</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-category">Architecture &amp; Form</p>
+              <h3 class="card-title">Minimalist Architectural Pavilion</h3>
+              <p class="card-description">
+                Featuring fluid sculpted concrete envelopes and expansive floor-to-ceiling glass facades that capture natural ambient golden-hour reflections. Designed for organic integration within serene landscapes.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Cast Concrete</span>
+                <span class="tag">Panoramic Glass</span>
+                <span class="tag">Sunset Orientation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Kinetic 3D Fluid Sculpture -->
+          <article class="showcase-card" id="cardSculpt">
+            <div class="card-media" title="Click to expand view">
+              <span class="card-badge">Digital Art</span>
+              <img src="/images/abstract-sculpture.jpg" alt="Iridescent kinetic fluid glass and chrome 3D sculpture" loading="lazy">
+              <div class="card-overlay-btn">
+                <div class="overlay-icon">⤢</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-category">Digital 3D Art</p>
+              <h3 class="card-title">Iridescent Kinetic Fluid Sculpture</h3>
+              <p class="card-description">
+                A suspended 3D composition exploring high-index fluid glass refraction, iridescent spectral highlights, and liquid chrome textures illuminated under cinematic studio rim lighting.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Chromatic Dispersion</span>
+                <span class="tag">Raytraced Chrome</span>
+                <span class="tag">Dynamic Balance</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Creative Design Studio -->
+          <article class="showcase-card" id="cardStudio">
+            <div class="card-media" title="Click to expand view">
+              <span class="card-badge">Interior</span>
+              <img src="/images/studio-interior.jpg" alt="Scandinavian modern creative design studio interior" loading="lazy">
+              <div class="card-overlay-btn">
+                <div class="overlay-icon">⤢</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-category">Interior &amp; Workspace</p>
+              <h3 class="card-title">Nordic Creative Design Studio</h3>
+              <p class="card-description">
+                A tranquil creative workspace centered around natural white oak joinery, handcrafted ceramic elements, and tactile drafting materials illuminated by gentle morning window light.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Solid White Oak</span>
+                <span class="tag">Artisan Ceramics</span>
+                <span class="tag">Natural Lighting</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Architecture Specifications -->
+      <section class="specs-section" id="architecture">
+        <div class="section-header">
+          <p class="section-tag">System Architecture</p>
+          <h2 class="section-title">Full Stack Implementation Highlights</h2>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-box">
+            <div class="spec-icon">⚡</div>
+            <h3 class="spec-title">Express.js Serving Pipeline</h3>
+            <p class="spec-desc">
+              Node.js and Express handle asset pipeline delivery with HTTP caching, ETag validation, and zero overhead.
+            </p>
+          </div>
+
+          <div class="spec-box">
+            <div class="spec-icon">🎨</div>
+            <h3 class="spec-title">Custom Design System</h3>
+            <p class="spec-desc">
+              Crafted with modern CSS custom properties, backdrop blur glassmorphism, responsive grid geometry, and fluid clamp typography.
+            </p>
+          </div>
+
+          <div class="spec-box">
+            <div class="spec-icon">🔒</div>
+            <h3 class="spec-title">Zero DB Dependencies</h3>
+            <p class="spec-desc">
+              Fully decoupled from database drivers and external datastores, eliminating security attack vectors and latency.
+            </p>
+          </div>
+
+          <div class="spec-box">
+            <div class="spec-icon">📡</div>
+            <h3 class="spec-title">Health Check Endpoints</h3>
+            <p class="spec-desc">
+              Includes dedicated <code>/api/health</code> and <code>/api/content</code> REST endpoints ready for monitoring and automated testing.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="tech-badges">
+          <span class="tech-badge">Node.js v24</span>
+          <span class="tech-badge">Express.js</span>
+          <span class="tech-badge">Semantic HTML5</span>
+          <span class="tech-badge">Vanilla Modern CSS</span>
+          <span class="tech-badge">MEAN Stack Baseline</span>
+        </div>
+        <p class="footer-text">
+          &copy; 2026 Nexus Showcase • Basic Full Stack Static Page Display • All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="modal-overlay" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close image modal">&times;</button>
+      <div class="modal-img-container">
+        <img id="modalImage" src="" alt="Expanded View">
+      </div>
+      <div class="modal-info">
+        <h3 class="modal-title" id="modalTitle">Artwork Title</h3>
+        <p class="modal-caption" id="modalCaption">Artwork Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
